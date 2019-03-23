@@ -16,6 +16,15 @@
                         <page string="Description">
                             <field name="description"/>
                         </page>
+                        <page string="Session">
+                            <field name="session_ids">
+                                <tree string="Registred Session">
+                                    <field name="name"/>
+                                    <field name="instructor_id"/>
+                                    <field name="duration"/>
+                                </tree>
+                            </field>
+                        </page>
                     </notebook>
                 </sheet>
             </form>
