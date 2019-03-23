@@ -9,6 +9,7 @@
                 <sheet>
                     <group>
                         <field name="name"/>
+                        <field name="responsible_id"/>
                         
                     </group>
                     <notebook>
@@ -28,7 +29,20 @@
             <search>
                 <field name="name"/>
                 <field name="description"/>
+                <field name="responsible_id"/>
             </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="course_tree_view">
+        <field name="name">course.tree</field>
+        <field name="model">openacademy.course</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="responsible_id"/>
+            </tree>
         </field>
     </record>
 

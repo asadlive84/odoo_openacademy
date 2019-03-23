@@ -8,8 +8,12 @@
             <form>
                 <sheet>
                     <group>
-                        <group>
+                        <group string="General">
+                            <field name="course_id"/>
                             <field name="name"/>
+                            <field name="instructor_id"/>
+                        </group>
+                        <group string="Schedule">
                             <field name="start_date"/>
                             <field name="duration"/>
                             <field name="seats"/>
@@ -30,6 +34,8 @@
                 <field name="start_date"/>
                 <field name="duration"/>
                 <field name="seats"/>
+                <field name="instructor_id"/>
+                <field name="course_id"/>
                         
             </tree>
         </field>
@@ -45,6 +51,8 @@
                 <field name="start_date"/>
                 <field name="duration"/>
                 <field name="seats"/>
+                 <field name="instructor_id"/>
+                <field name="course_id"/>
                         
             </search>
         </field>

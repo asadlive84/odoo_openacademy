@@ -23,7 +23,9 @@ class Course(models.Model):
     name=fields.Char(string="Title", required=True)
     description=fields.Text()
 
-    responsible_id=fields.Many2one('res.user', ondelete='set null', string='Responsible', index=True)
+    responsible_id=fields.Many2one('res.users', ondelete='set null', string='Responsible', index=True)
+
+    
 
 
 
