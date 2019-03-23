@@ -11,7 +11,7 @@
             - attendees registration
     """,
 
-    'author': "Asaduzzaman Sohel",
+    'author': "Asaduzzaman Sohel BYSL",
     'website': "http://www.blog.intelliservices.com",
 
     # Categories can be used to filter modules in modules listing

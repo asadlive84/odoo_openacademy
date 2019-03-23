@@ -1,6 +1,37 @@
-
-
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+
+    <record model="ir.ui.view" id="course_form_view">
+        <field name="name">course.form</field>
+        <field name="model">openacademy.course</field>
+        <field name="arch" type="xml">
+            <form string="Course Form">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <field name="description"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="course_search_view">
+        <field name="name">course.search</field>
+        <field name="model">openacademy.course</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="description"/>
+            </search>
+        </field>
+    </record>
+
 
     <record model="ir.actions.act_window" id="course_list_actions">
         <field name="name">Course</field>
@@ -18,7 +49,7 @@
 
     <menuitem id="main_openacademy_menu" name="Open Academy"/>
     <menuitem id="openacademy_menu" name="Open Academy" parent="main_openacademy_menu"/>
-     <menuitem id="course_menu" name="Course" parent="openacademy_menu" action="course_list_actions"/>
+    <menuitem id="course_menu" name="Course" parent="openacademy_menu" action="course_list_actions"/>
 
 
 </odoo>
